@@ -1,0 +1,14 @@
+<main>
+    <header>
+        <app-logo></app-logo>
+    </header>
+
+    <nav>
+        <app-search (search)="updateSearch($event)"></app-search>
+    </nav>
+    <div class="app-container">
+        @for (card of cards; track card.id) {
+        <app-card [housingLocation]="card"></app-card>
+        }
+    </div>
+</main>

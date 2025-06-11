@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Housinglocation } from '../interfaces/housinglocation';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +8,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.scss'
 })
 export class Card {
-  @Input() title!: string;
-  @Input() imageUrl!: string;
-  @Input() description!: string;
+  @Input() housingLocation!: Housinglocation;
+  // @Input() title!: string;
+  // @Input() imageUrl!: string;
+  // @Input() description!: string;
   }

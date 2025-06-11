@@ -111,8 +111,11 @@ export class HousingService {
     }
   ];
 
-
-  getAllHousingLocations(searchTerm: string): Housinglocation[] {
+  getAllHousingLocations(searchTerm?: string): Housinglocation[] {
+    if (!searchTerm) {
+      return this.housingLocationList;
+    }
+    
       searchTerm = searchTerm.toLowerCase();
     
         return this.housingLocationList.filter(location =>

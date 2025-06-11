@@ -11,9 +11,12 @@ import { FormsModule } from '@angular/forms';
 export class Search {
   searchTerm: string = '';
 
-  @Output() search = new EventEmitter<string>();
+  @Output() search = new EventEmitter<string>(); 
+  cards: any;
+  housingService: any;
+  // @Output erzeugt ein eigenes Event namens search, das den Begriff nach außen weitergibt
 
   onSearch() {
-    this.search.emit(this.searchTerm);
+    this.cards = this.housingService.getAllHousingLocations(this.searchTerm);
   }
 }

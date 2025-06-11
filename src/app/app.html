@@ -1,14 +1,3 @@
 <main>
-  <header>
-    <app-logo></app-logo>
-  </header>
-
-  <nav>
-    <app-search (search)="($event)"></app-search>
-  </nav>
-  <div class="app-container">
-    @for (card of cards; track card.title) {
-    <app-card></app-card>
-    }
-  </div>
+  <router-outlet></router-outlet>
 </main>
