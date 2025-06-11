@@ -1,12 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Logo } from './logo/logo';
+import { Card } from './card/card';
+import { Search } from './search/search';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, Card, Logo, Search],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
+
 export class App {
-  protected title = 'real-estate-website';
+  cards = [
+    {
+      title: 'Tolle Bude',
+      imageUrl: '',
+      description: ''
+    },
+    {
+      title: 'Netter Schuppen',
+      imageUrl: '',
+      description: ''
+    },
+    {
+      title: 'Schnieke Hütte',
+      imageUrl: '',
+      description: ''
+    }
+  ];
 }

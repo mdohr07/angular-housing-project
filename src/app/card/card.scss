@@ -1,0 +1,24 @@
+:root {
+    // ?
+}
+
+.card {
+    display: grid;
+    background-color: #c8c2e4;
+    min-height: 250px;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    background-color: #efefef;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card-text {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}

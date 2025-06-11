@@ -1,0 +1,20 @@
+input.search-field {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 300px;
+    margin-right: 0.5rem;
+}
+
+input.seach-fild:active { // geht nicht
+    border-color: #605dc8;
+}
+
+.search-btn {
+    background-color: #605dc8;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+}
